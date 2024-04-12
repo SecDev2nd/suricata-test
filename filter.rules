@@ -1,0 +1,60 @@
+alert tcp any any -> any 80 (msg:"Site naver.com Access"; content:"Host: naver.com"; http_uri; nocase; sid:10001; rev:1;)
+alert tcp any any -> any 443 (msg:"Site naver.com HTTPS Access"; tls_sni; content:"naver.com"; nocase; sid:10002; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site gilgil.net Access"; content:"Host: gilgil.net"; http_uri; nocase; sid:10003; rev:1;)
+alert tcp any any -> any 443 (msg:"Site gilgil.net HTTPS Access"; tls_sni; content:"gilgil.net"; nocase; sid:10004; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site test.gilgil.net Access"; content:"Host: test.gilgil.net"; http_uri; nocase; sid:10005; rev:1;)
+alert tcp any any -> any 443 (msg:"Site test.gilgil.net HTTPS Access"; tls_sni; content:"test.gilgil.net"; nocase; sid:10006; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site ip.gilgil.net Access"; content:"Host: ip.gilgil.net"; http_uri; nocase; sid:10007; rev:1;)
+alert tcp any any -> any 443 (msg:"Site ip.gilgil.net HTTPS Access"; tls_sni; content:"ip.gilgil.net"; nocase; sid:10008; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site daum.net Access"; content:"Host: daum.net"; http_uri; nocase; sid:10009; rev:1;)
+alert tcp any any -> any 443 (msg:"Site daum.net HTTPS Access"; tls_sni; content:"daum.net"; nocase; sid:10010; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site classum.com Access"; content:"Host: classum.com"; http_uri; nocase; sid:10011; rev:1;)
+alert tcp any any -> any 443 (msg:"Site classum.com HTTPS Access"; tls_sni; content:"classum.com"; nocase; sid:10012; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site chat.openai.com Access"; content:"Host: chat.openai.com"; http_uri; nocase; sid:10013; rev:1;)
+alert tcp any any -> any 443 (msg:"Site chat.openai.com HTTPS Access"; tls_sni; content:"chat.openai.com"; nocase; sid:10014; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site acmicpc.net Access"; content:"Host: acmicpc.net"; http_uri; nocase; sid:10015; rev:1;)
+alert tcp any any -> any 443 (msg:"Site acmicpc.net HTTPS Access"; tls_sni; content:"acmicpc.net"; nocase; sid:10016; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site netflix.com Access"; content:"Host: netflix.com"; http_uri; nocase; sid:10017; rev:1;)
+alert tcp any any -> any 443 (msg:"Site netflix.com HTTPS Access"; tls_sni; content:"netflix.com"; nocase; sid:10018; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site kitribob.wiki Access"; content:"Host: kitribob.wiki"; http_uri; nocase; sid:10019; rev:1;)
+alert tcp any any -> any 443 (msg:"Site kitribob.wiki HTTPS Access"; tls_sni; content:"kitribob.wiki"; nocase; sid:10020; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site programmers.co.kr Access"; content:"Host: programmers.co.kr"; http_uri; nocase; sid:10021; rev:1;)
+alert tcp any any -> any 443 (msg:"Site programmers.co.kr HTTPS Access"; tls_sni; content:"programmers.co.kr"; nocase; sid:10022; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site comcbt.com Access"; content:"Host: comcbt.com"; http_uri; nocase; sid:10023; rev:1;)
+alert tcp any any -> any 443 (msg:"Site comcbt.com HTTPS Access"; tls_sni; content:"comcbt.com"; nocase; sid:10024; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site start.spring.io Access"; content:"Host: start.spring.io"; http_uri; nocase; sid:10025; rev:1;)
+alert tcp any any -> any 443 (msg:"Site start.spring.io HTTPS Access"; tls_sni; content:"start.spring.io"; nocase; sid:10026; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site youtube.com Access"; content:"Host: youtube.com"; http_uri; nocase; sid:10027; rev:1;)
+alert tcp any any -> any 443 (msg:"Site youtube.com HTTPS Access"; tls_sni; content:"youtube.com"; nocase; sid:10028; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site facebook.com Access"; content:"Host: facebook.com"; http_uri; nocase; sid:10029; rev:1;)
+alert tcp any any -> any 443 (msg:"Site facebook.com HTTPS Access"; tls_sni; content:"facebook.com"; nocase; sid:10030; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site udemy.com Access"; content:"Host: udemy.com"; http_uri; nocase; sid:10031; rev:1;)
+alert tcp any any -> any 443 (msg:"Site udemy.com HTTPS Access"; tls_sni; content:"udemy.com"; nocase; sid:10032; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site solved.ac Access"; content:"Host: solved.ac"; http_uri; nocase; sid:10033; rev:1;)
+alert tcp any any -> any 443 (msg:"Site solved.ac HTTPS Access"; tls_sni; content:"solved.ac"; nocase; sid:10034; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site baidu.com Access"; content:"Host: baidu.com"; http_uri; nocase; sid:10035; rev:1;)
+alert tcp any any -> any 443 (msg:"Site baidu.com HTTPS Access"; tls_sni; content:"baidu.com"; nocase; sid:10036; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site yahoo.com Access"; content:"Host: yahoo.com"; http_uri; nocase; sid:10037; rev:1;)
+alert tcp any any -> any 443 (msg:"Site yahoo.com HTTPS Access"; tls_sni; content:"yahoo.com"; nocase; sid:10038; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Site amazon.com Access"; content:"Host: amazon.com"; http_uri; nocase; sid:10039; rev:1;)
+alert tcp any any -> any 443 (msg:"Site amazon.com HTTPS Access"; tls_sni; content:"amazon.com"; nocase; sid:10040; rev:1;)
+
